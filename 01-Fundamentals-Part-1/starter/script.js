@@ -1,13 +1,38 @@
-const age = 17;
-const isOldEnough = age >= 18;
+const day = 'thursday';
 
-if(age >= 18) {
-    console.log('Sarah can start her driving license ✅')
-} else {
-    const yearsLeft = 18 - age;
-    console.log(`Sarah too young. Wait another ${yearsLeft} years ❌`)
+// Switch Case
+
+switch(day) {
+    case 'monday':
+        console.log("Work my Miami Software Developer Job");
+        console.log("Go to the Gym");
+        break;
+    case 'tuesday':
+        console.log("Clean my room");
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log("Get paid for my hard work");
+    case 'friday':
+        console.log("Record my own progress");
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log("Enjoy my weekend");
+        break;
+    default:
+        console.log("Not a registered day");
 }
 
-const birthYear = 1991;
-
-const helloWorld = "1"
+// As an If Else...
+if (day == 'monday') {
+    console.log("It's a beautiful monday")
+} else if (day == 'tuesday') {
+    console.log("It's a beautiful tuesday")
+} else if (day == 'wednesday' || day == 'thursday') {
+    console.log("It's a beautiful middle of the week day")
+} else if (day == 'friday') {
+    console.log("It's a beautiful friday")
+} else if (day == 'saturday' || day == 'sunday') {
+    console.log("It's a beautiful weekend")
+}
